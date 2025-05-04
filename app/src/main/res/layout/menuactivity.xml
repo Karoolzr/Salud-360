@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <!-- TextView de bienvenida -->
+    <TextView
+        android:id="@+id/textBienvenida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/afacad"
+        android:text="¡Bienvenido!"
+        android:textColor="@color/grisOsc"
+        android:textSize="34sp"
+        android:textStyle="bold"/>
+
+    <!-- TextView ¿Qué deseas hacer hoy? -->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textBienvenida"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/afacad"
+        android:text="¿Qué deseas hacer hoy?"
+        android:textColor="@color/grisOsc"
+        android:textSize="16sp" />
+
+    <!-- Cuadro blanco con banner -->
+    <LinearLayout
+        android:id="@+id/cuadro_blanco1"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView1"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/banner"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="25dp" />
+
+    <!-- Botones normales -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/cuadro_blanco1"
+        android:layout_marginTop="0dp"
+        android:gravity="center">
+
+        <!-- Botón Añadir Medicamentos -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonAgregarMedicamentos"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/boton_color"
+            android:backgroundTint="#FFFCFC"
+            android:fontFamily="@font/afacad"
+            android:paddingStart="12dp"
+            android:text="Añadir Medicamentos"
+            android:textColor="#020202"
+            android:textSize="20sp"
+            app:backgroundTint="@color/azulF"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonAgregarSignos"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/boton_color"
+            android:backgroundTint="#FFFCFC"
+            android:fontFamily="@font/afacad"
+            android:paddingStart="12dp"
+            android:text="Añadir Signos Vitales"
+            android:textColor="#020202"
+            android:textSize="20sp"
+            app:backgroundTint="@color/azulF"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonAgregarCitas"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/boton_color"
+            android:backgroundTint="#FFFCFC"
+            android:fontFamily="@font/afacad"
+            android:paddingStart="12dp"
+            android:text="Añadir Citas Médicas"
+            android:textColor="#020202"
+            android:textSize="20sp"
+            app:backgroundTint="@color/azulF"
+             />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonCalculadora"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/boton_color"
+            android:backgroundTint="#FFFCFC"
+            android:fontFamily="@font/afacad"
+            android:paddingStart="12dp"
+            android:text="Calculadora de IMC"
+            android:textColor="#020202"
+            android:textSize="20sp"
+            app:backgroundTint="@color/azulF"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonAsistente"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/boton_color"
+            android:backgroundTint="#FFFCFC"
+            android:fontFamily="@font/afacad"
+            android:paddingStart="12dp"
+            android:text="Asistente Medico"
+            android:textColor="#020202"
+            android:textSize="20sp"
+            app:backgroundTint="@color/azulF"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonAgregarContacto"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/boton_color"
+            android:backgroundTint="#FFFCFC"
+            android:fontFamily="@font/afacad"
+            android:paddingStart="12dp"
+            android:text="Añadir Contacto"
+            android:textColor="#020202"
+            android:textSize="20sp"
+            app:backgroundTint="@color/azulF"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonLlamar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/boton_color"
+            android:backgroundTint="#FFFCFC"
+            android:fontFamily="@font/afacad"
+            android:paddingStart="12dp"
+            android:text="Llamar al contacto de emergencia"
+            android:textColor="#020202"
+            android:textSize="20sp"
+            app:backgroundTint="@color/azulF"
+            />
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+

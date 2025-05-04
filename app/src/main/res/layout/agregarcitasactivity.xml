@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Agregarcitasactivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/afacad"
+                android:text="Registrar cita médica"
+                android:textColor="@color/grisOsc"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <!-- Fecha -->
+            <EditText
+                android:id="@+id/etFechaCita"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext"
+                android:drawableStart="@drawable/calendar_regular"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/afacad"
+                android:textColorHint="@color/gris"
+                android:hint="Fecha de la cita (dd/mm/yyyy)"
+                android:inputType="date"
+                android:paddingStart="16dp"
+                android:textColor="@color/gris" />
+
+            <!-- Hora -->
+            <EditText
+                android:id="@+id/etHoraCita"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext"
+                android:drawableStart="@drawable/clock_solid"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/afacad"
+                android:textColorHint="@color/gris"
+                android:hint="Hora de la cita (hh:mm)"
+                android:inputType="time"
+                android:paddingStart="12dp"
+                android:textColor="@color/gris" />
+
+            <!-- Motivo -->
+            <EditText
+                android:id="@+id/etMotivoCita"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext"
+                android:drawableStart="@drawable/notes_medical_solid2"
+                android:drawablePadding="8dp"
+                android:textColorHint="@color/gris"
+                android:fontFamily="@font/afacad"
+                android:hint="Motivo de la cita"
+                android:inputType="textMultiLine"
+                android:paddingStart="12dp"
+                android:textColor="@color/gris" />
+
+            <!-- Lugar -->
+            <EditText
+                android:id="@+id/etLugarCita"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext"
+                android:drawableStart="@drawable/location_dot_solid"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/afacad"
+                android:textColorHint="@color/gris"
+                android:hint="Lugar de la cita"
+                android:inputType="textMultiLine"
+                android:paddingStart="12dp"
+                android:textColor="@color/gris" />
+
+            <!-- Botón Registrar -->
+            <Button
+                android:id="@+id/buttonRegistrarCita"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/boton_color"
+                android:text="Registrar cita"
+                android:textColor="#020202"
+                android:textSize="20sp"
+                android:fontFamily="@font/afacad"
+                app:backgroundTint="@color/azulF" />
+
+            <!-- Botón Ver citas -->
+            <Button
+                android:id="@+id/buttonVerCitas"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/boton_transparente"
+                android:fontFamily="@font/afacad"
+                android:text="Ver citas médicas"
+                android:textColor="#020202"
+                android:textSize="20sp"
+                app:backgroundTint="@color/azulF" />
+
+            <!-- Lista de citas -->
+            <ListView
+                android:id="@+id/citasListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

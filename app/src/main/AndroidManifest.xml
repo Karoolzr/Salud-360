@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Permiso para acceder a Internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" /> <!-- Especificación de hardware opcional -->
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EJEMPLO"
+        tools:targetApi="31">
+        <activity
+            android:name=".assistente"
+            android:exported="false" />
+        <!-- Actividades de la aplicación -->
+        <activity
+            android:name=".CalculadoraActivity"
+            android:exported="false" /> <!-- Pantalla principal: Login o registro de usuario -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Otras pantallas de la aplicación -->
+        <activity
+            android:name=".MenuActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AgregarContactoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AgregarMedicamentosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignosVitalesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Agregarcitasactivity"
+            android:exported="true" /> <!-- Fuentes pre-cargadas -->
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "199673680514",
+    "project_id": "saludos-43a25",
+    "storage_bucket": "saludos-43a25.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199673680514:android:15a66c62f1536403db9a9b",
+        "android_client_info": {
+          "package_name": "com.example.ejemplo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8lVLYtRzH_ZEjSZnNwrm5eFJr6APX_yo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

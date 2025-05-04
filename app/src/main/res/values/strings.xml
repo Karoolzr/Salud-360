@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Salud360</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="sp_horas">
+        <item>Todos los días</item>
+        <item>Cada 4 horas</item>
+        <item>Cada 6 horas</item>
+        <item>Cada 8 horas</item>
+        <item>Cada 12 horas</item>
+    </string-array>
+
+    <string-array name="sp_dias">
+        <item>1 Dia</item>
+        <item>2 Días</item>
+        <item>3 Días</item>
+        <item>4 Días</item>
+        <item>5 Días</item>
+        <item>6 Días</item>
+        <item>7 Días</item>
+    </string-array>
+
+    <string-array name="sp_tipo_medicamento">
+        <item>Pastilla</item>
+        <item>Cápsula</item>
+        <item>Gragea</item>
+        <item>Polvo</item>
+        <item>Jarabe</item>
+        <item>Solución</item>
+        <item>Suspensión</item>
+        <item>Inyección</item>
+        <item>Inhalador</item>
+        <item>Nebulizador</item>
+        <item>Crema</item>
+        <item>Ungüento</item>
+        <item>Gel</item>
+        <item>Loción</item>
+        <item>Supositorio</item>
+        <item>Óvulo</item>
+        <item>Parche</item>
+    </string-array>
+
+    <string-array name="sp_signos_vitales">
+        <item>Frecuencia cardíaca (pulso)</item>
+        <item>Frecuencia respiratoria</item>
+        <item>Temperatura corporal</item>
+        <item>Presión arterial</item>
+        <item>Saturación de oxígeno en sangre</item>
+    </string-array>
+
+
+</resources>

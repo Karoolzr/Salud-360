@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contacto de Emergencia"
+        android:textSize="24sp"
+        android:fontFamily="@font/afacad"
+        android:textColor="@color/grisOsc"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:background="@drawable/edittext"
+        android:fontFamily="@font/afacad"
+        android:textColor="@color/grisOsc"
+        android:textColorHint="@color/gris"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número de teléfono"
+        android:inputType="phone"
+        android:background="@drawable/edittext"
+        android:fontFamily="@font/afacad"
+        android:textColor="@color/grisOsc"
+        android:textColorHint="@color/gris"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/boton_color"
+        android:fontFamily="@font/afacad"
+        android:text="Guardar"
+        android:textColor="@color/grisOsc"
+        android:textSize="16sp"
+        app:backgroundTint="@color/azulF" />
+
+    <ListView
+        android:id="@+id/listViewContactos"
+        android:layout_width="match_parent"
+        android:textColor="@color/grisOsc"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
