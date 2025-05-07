@@ -32,14 +32,14 @@ class CalculadoraActivity : AppCompatActivity() {
     }
 
     private fun calcularIMC() {
-        // Obtener valores de los pickers
+        // Obtener valores
         val altura = binding.heightPicker.value.toDouble() / 100
         val peso = binding.weightPicker.value.toDouble()
 
-        // Calcular IMC
+        // Calcular
         val imc = peso / (altura * altura)
 
-        // Mostrar resultados
+        // Mostrar
         binding.resultsTV.text = String.format("Tu IMC es de: %.2f", imc)
         binding.healthyTV.text = String.format("Considerado: %s", mensajeSaludable(imc))
     }
